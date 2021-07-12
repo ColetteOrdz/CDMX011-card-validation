@@ -1,0 +1,85 @@
+header { 
+    background-color: #48C9B0 ;
+    color : white ;
+    height: 40px;
+    margin: 0px ;
+    padding-top: 15px ;
+    padding-left: 10px;
+}
+
+body { 
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:large; 
+    background-color :white ;
+    color : black ;
+    margin: 0px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 { 
+    color : rgb(78, 150, 78); 
+}
+
+section {
+    opacity: 0.8;
+    height: 450px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sectionInicio {
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #48C9B0; 
+} 
+
+#validation{
+    display: none;
+    width: 350px;
+    height: 240px; 
+    border-radius: 20px;
+    background-color: #48C9B0;
+    margin-left: 505px;
+}
+
+#insertName, #insertSurname, #cardNumbers{
+    width: 30%;
+    height: 30px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+#insertName, #insertSurname {
+    margin: 0px 20px 0px 20px ;
+}
+
+#tryAgain, #validcard {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+footer {
+    font-size: small;
+    color: black; 
+    align-self: center;
+}

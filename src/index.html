@@ -4,11 +4,49 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+    <header>CardValidationforEntrepreneurs</header>
+
+    <main>
+      <h1 align="center">Bienvenido a CardValidation</h1>
+      <section id="inicio" align="center">
+        <div id="sectionInicio">
+          <br><p1>Antes de continuar con tu compra, por <b>tu seguridad</b>, necesitamos ratificar <br> información de tu tarjeta de crédito/débito.<br>
+          <br>Por favor, ingresa los siguientes datos:<br></p1>
+          <div align="center"><br><form>
+            <label for="personalInfo">Nombre : </label>
+            <input placeholder="Nombre" type="name" id="insertName" required> 
+            <label for="personalInfo2">Apellido : </label>
+            <input type="surname" placeholder="Apellido" id="insertSurname" required>
+            </form><br>
+          </div>
+          <div align="center">
+            <form><p2>Ingresa los 16 dígitos que aparecen al frente de tu tarjeta.</p2><br>
+            <br></form>
+            <input type="text" placeholder="Ingresa tu tarjeta" id="cardNumbers" maxlength="16" required/>
+          </div>
+          <br><div align="center"><label>
+            <input type="checkbox" value="condicionesAccept" required>Acepto los términos y condiciones.</label>
+          </div>
+          <div align="center"><input type="button" id="validcard" value="VALIDAR"/></div>
+      </div>
+    </section>
+
+      <section id="validation" align="center">
+        <br><p id="resultado" align="center"></p>
+        <br><input align="center" id="tryAgain" type="button" value="ACEPTAR"/> 
+      </section>
+    </main>
+   
+  <br>
+   <footer>Copyright 2013-2021 by Laboratoria. All Rights Reserved.</footer>
+    
     <script src="index.js" type="module"></script>
+    <script src="validator.js" type="module"></script>
   </body>
 </html>
