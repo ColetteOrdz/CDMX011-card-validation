@@ -21,17 +21,17 @@ const validator = {
         let revertidos = cardInfo.reverse("cardInfo"); //revertí el orden del string
         //console.log(revertidos); 
         
-        for (var element = 0 ; element < cardInfo.length; element++) { //ubicar los dígitos en las posciones par
+        for (let element = 0 ; element < cardInfo.length; element++) { //ubicar los dígitos en las posciones par
            if (element%2!==0) {
-              var posicionesPar = (revertidos[element]*2); //duplicar los dígitos en las posicones par
+              let posicionesPar = (revertidos[element]*2); //duplicar los dígitos en las posicones par
               revertidos[element] = posicionesPar; 
            } else {
                continue;
            }}
                
-        for (var element2 = 0 ; element2 < cardInfo.length; element2++) {
+        for (let element2 = 0 ; element2 < cardInfo.length; element2++) {
            if (element2%2!==0 && revertidos[element2]>9) { //cada elemento en posición par y mayor a 9
-              var reducirNums = (revertidos[element2]-9); //se le reste 9 para que el número duplicado sea menor a 10
+              let reducirNums = (revertidos[element2]-9); //se le reste 9 para que el número duplicado sea menor a 10
               revertidos[element2] = reducirNums;
            } else {
                continue; 
@@ -51,7 +51,6 @@ const validator = {
         }
              
      }
-    
     
 }
 

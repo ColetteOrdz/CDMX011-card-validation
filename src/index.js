@@ -1,5 +1,6 @@
 import validator from './validator.js';
 
+
 let btnValid = document.getElementById("validcard");
 btnValid.addEventListener("click", ()=>{  //addEventListener está haciendo la función del onclick y está llamado al objeto de Validator
    let numeros = document.getElementById("cardNumbers").value;
@@ -31,6 +32,10 @@ showStart.addEventListener("click", ()=>{
    datos.style.display="flex";
    let numeros = document.getElementById("cardNumbers");
    numeros.value = ""; //cambiaría los números por un espacio (los borraría)
+   let nombre = document.getElementById("insertName");
+   nombre.value = "";
+   let apellido = document.getElementById("insertSurname");
+   apellido.value = ""; 
 });
 
 //console.log(validator);
